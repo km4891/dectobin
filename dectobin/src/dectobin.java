@@ -33,10 +33,10 @@ public class dectobin {
             System.out.println("enter a non negative number");
           }
       
-          // checks if number is greater than or equal to 65
-        //   else if (dec > 265) {
-        //     System.out.println("please enter a number smaller than 256");
-        //   }
+        //   checks if number is greater than 256
+          else if (dec > 256) {
+            System.out.println("please enter a number smaller than 256");
+          }
           
           // everything else
           else  {
