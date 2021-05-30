@@ -2,7 +2,7 @@ import java.util.*;
 
 public class dectobin {
     
-
+    
     public static void decimaltobinary(int dec) {
 
 
@@ -18,17 +18,21 @@ public class dectobin {
             dec = dec / 2;
         }
         for(int i = count - 1; i >= 0; i--) {
-            System.out.print(arr[i] + " ");
+            
+            System.out.print(arr[i]);
         }
+            
 
     }
 
     public static void main(String[] args) throws Exception {
         int dec;
-
+        
+        System.out.print("Enter a non negative number up to 255: ");
         Scanner input = new Scanner (System.in);
         dec = input.nextInt();
 
+        // checks for non negative number
         if (dec < 0) {
             System.out.println("enter a non negative number");
           }
@@ -40,6 +44,7 @@ public class dectobin {
           
           // everything else
           else  {
+            System.out.print("The binary representation for " + dec + " is ");
             decimaltobinary(dec);
           }
   
